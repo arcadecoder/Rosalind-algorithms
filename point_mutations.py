@@ -14,6 +14,7 @@ def hamming_distance(s1, s2):
     # TO DO: create dictionary of the zip & empty list object
     string_tuple = list(zip(s1, s2))
     zipped_list = string_tuple[:]
+    # The method of transforming the created zip into a dictionery did not work 
     string_dictionary = dict(zipped_list)
     char_count = []
     # For loop to check if key value pairs match & count
