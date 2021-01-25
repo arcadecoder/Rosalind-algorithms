@@ -17,14 +17,17 @@ def hamming_distance(s1, s2):
     string_dictionary = dict(zipped_list)
     char_count = []
     # For loop to check if key value pairs match & count
-    for key, value in string_dictionary.items():
-        if key == value:
+    for entry in zipped_list:
+        if entry[0] == entry[1]:
             char_count.append('*')
         else:
-            char_count.append(value)
+            char_count.append("mismatch")
     # Count the number of times * apppears in the list
     count = ''.join(char_count).count('*')
-    print(string_dictionary)
+
+    print(char_count)
+    print(count)
+    print(char_count.count("mismatch"))
     return
 
 
