@@ -14,15 +14,21 @@ def hamming_distance(s1, s2):
     # TO DO: create list of each tuple
     string_tuple = list(zip(s1, s2))
     zipped_list = string_tuple[:]
+    # The method of transforming the created zip into a dictionery did not work
+    string_dictionary = dict(zipped_list)
     char_count = []
     # For loop to check if key value pairs match & count
     for entry in zipped_list:
         if entry[0] == entry[1]:
             char_count.append('*')
         else:
-            char_count.append('mismatch')
-    hamming_distance = char_count.count('mismatch')
-    print(hamming_distance)
+            char_count.append("mismatch")
+    # Count the number of times * apppears in the list
+    count = ''.join(char_count).count('*')
+
+    print(char_count)
+    print(count)
+    print(char_count.count("mismatch"))
     return
 
 
