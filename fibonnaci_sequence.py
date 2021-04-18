@@ -14,3 +14,8 @@ def fibonnaci_loop(number):
 
 
 fibonnaci_loop(12)
+
+
+ string_tuple = zip(string1, string2)
+    string_dictionary = dict(string_tuple)
+    print(string_dictionary)
